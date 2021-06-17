@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-    <img src="https://www.objective.com.br/wp-content/uploads/2020/11/logo.svg" style="width: 200px; height: 44px;" width="200" height="44" />
+    <img src="https://media-exp1.licdn.com/dms/image/C4E1BAQF7JNV_LeOJUA/company-background_10000/0/1604667814009?e=1623985200&v=beta&t=XZwUGtoB7W129deBS2N1PscQkd4SsUSkGLTgyetYiCw" />
 </div>
 
 <div align="center">
