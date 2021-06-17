@@ -1,0 +1,8 @@
+# ignore Composer downloads
+/vendor/*
+
+# igone cache files
+.phpunit.result.cache
+.php_cs.cache
+
+.phpunit.cache/
