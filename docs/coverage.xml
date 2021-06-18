@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1624038216">
-  <project timestamp="1624038216">
+<coverage generated="1624040923">
+  <project timestamp="1624040923">
     <file name="/var/www/app/src/ObjQuestOne/AndSpecification.php">
       <class name="App\ObjQuestOne\AndSpecification" namespace="global">
         <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
@@ -82,10 +82,6 @@
       <line num="25" type="stmt" count="3"/>
       <metrics loc="28" ncloc="28" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
     </file>
-    <file name="/var/www/app/src/index.php">
-      <line num="3" type="stmt" count="0"/>
-      <metrics loc="3" ncloc="3" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="1" coveredelements="0"/>
-    </file>
-    <metrics files="9" loc="158" ncloc="158" classes="7" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="25" elements="37" coveredelements="36"/>
+    <metrics files="8" loc="155" ncloc="155" classes="7" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="36" coveredelements="36"/>
   </project>
 </coverage>

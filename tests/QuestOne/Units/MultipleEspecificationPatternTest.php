@@ -17,7 +17,6 @@ class MultipleSpecificationPatternTest extends TestCase
        
     /**
      * @testdox Teste se dado um número natural ele não é multiplo de 3 ou 5
-     * @covers
      */
     public function test_if_the_number_not_is_multiple_of_3_or_5()
     {   
@@ -34,7 +33,6 @@ class MultipleSpecificationPatternTest extends TestCase
 
     /**
      * @testdox Teste se dado um número natural ele é multiplo de (3 ou 5) e 7
-     * @covers
      */
     public function test_if_the_number_is_multiple_of_3_or_5_and_7()
     {   
@@ -49,7 +47,6 @@ class MultipleSpecificationPatternTest extends TestCase
 
     /**
      * @testdox Teste se dado um número natural ele é multiplo de 3 e 5
-     * @covers
      */
     public function test_if_the_number_is_multiple_of_3_and_5()
     {   
@@ -60,7 +57,6 @@ class MultipleSpecificationPatternTest extends TestCase
 
     /**
      * @testdox Teste se dado um número natural ele é multiplo de 3 ou 5
-     * @covers
      */
     public function test_if_the_number_is_multiple_of_3_or_5()
     {   

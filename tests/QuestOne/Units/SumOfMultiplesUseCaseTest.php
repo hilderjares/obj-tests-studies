@@ -16,7 +16,6 @@ class SumOfMultiplesUseCaseTest extends TestCase
     
     /**
      * @testdox Teste somar todos os multiplos de 3 ou 5 abaixo de 10
-     * @covers
      */
     public function test_sum_all_multiples_of_3_or_5_less_than_10(): void
     {   
@@ -30,7 +29,6 @@ class SumOfMultiplesUseCaseTest extends TestCase
 
     /**
      * @testdox Teste somar todos os multiplos de 3 e 5 abaixo de 50
-     * @covers
      */
     public function test_sum_all_multiples_of_3_and_5_less_than_50(): void
     {   
@@ -44,7 +42,6 @@ class SumOfMultiplesUseCaseTest extends TestCase
 
     /**
      * @testdox Teste somar todos os multiplos de (3 ou 5) e 7 abaixo de 50
-     * @covers
      */
     public function test_sum_all_multiples_of_3_or_5_and_7_less_than_50(): void
     {   
