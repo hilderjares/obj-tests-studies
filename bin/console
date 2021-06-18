@@ -22,9 +22,11 @@ then
     echo -e "\e[1myou can type this commands:\e[0m"
     echo -e "\e[38;5;82mtest"
     echo -e "test:dox"
-    echo -e "test:save"
-    echo -e "style:check"
-    echo -e "style:fix\e[0m"
+    echo -e "test:coverage"
+    echo -e "test:coverage:svg"
+    echo -e "docker:restart"
+    echo -e "phpcs:check /path"
+    echo -e "phpcs:fix /path\e[0m"
 fi
 
 if [ "$1" = "docker:restart" ];
@@ -60,5 +62,5 @@ fi
 
 if [ "$1" = "phpcs:fix" ];
 then 
-    docker-compose exec app ./vendor/bin/php-cs-fixer fix 
+    docker-compose exec app ./vendor/bin/php-cs-fixer fix $2
 fi
