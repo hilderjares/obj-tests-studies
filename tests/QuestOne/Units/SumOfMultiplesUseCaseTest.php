@@ -1,9 +1,9 @@
 <?php
 
 use App\ObjQuestOne\AndSpecification;
-use App\ObjQuestOne\MultipleOfFiveEspecification;
-use App\ObjQuestOne\MultipleOfSevenEspecification;
-use App\ObjQuestOne\MultipleOfThreeEspecification;
+use App\ObjQuestOne\MultipleOfFiveSpecification;
+use App\ObjQuestOne\MultipleOfSevenSpecification;
+use App\ObjQuestOne\MultipleOfThreeSpecification;
 use App\ObjQuestOne\OrSpecification;
 use App\ObjQuestOne\SumOfMultiplesUseCase;
 use PHPUnit\Framework\TestCase;
@@ -20,7 +20,7 @@ class SumOfMultiplesUseCaseTest extends TestCase
      */
     public function test_sum_all_multiples_of_3_or_5_less_than_10(): void
     {   
-        $multipleOfThreeOrFive = new OrSpecification(new MultipleOfThreeEspecification(), new MultipleOfFiveEspecification());
+        $multipleOfThreeOrFive = new OrSpecification(new MultipleOfThreeSpecification(), new MultipleOfFiveSpecification());
         $useCase = new SumOfMultiplesUseCase($multipleOfThreeOrFive);
 
         $result = $useCase->execute(9);
@@ -34,7 +34,7 @@ class SumOfMultiplesUseCaseTest extends TestCase
      */
     public function test_sum_all_multiples_of_3_and_5_less_than_50(): void
     {   
-        $multipleOfThreeAndFive = new AndSpecification(new MultipleOfThreeEspecification(), new MultipleOfFiveEspecification());
+        $multipleOfThreeAndFive = new AndSpecification(new MultipleOfThreeSpecification(), new MultipleOfFiveSpecification());
         $useCase = new SumOfMultiplesUseCase($multipleOfThreeAndFive);
 
         $result = $useCase->execute(50);
@@ -48,8 +48,8 @@ class SumOfMultiplesUseCaseTest extends TestCase
      */
     public function test_sum_all_multiples_of_3_or_5_and_7_less_than_50(): void
     {   
-        $multipleOfThreeOrFive = new OrSpecification(new MultipleOfThreeEspecification(), new MultipleOfFiveEspecification());
-        $multipleOfThreeOrFiveAndSeven = new AndSpecification($multipleOfThreeOrFive, new MultipleOfSevenEspecification());
+        $multipleOfThreeOrFive = new OrSpecification(new MultipleOfThreeSpecification(), new MultipleOfFiveSpecification());
+        $multipleOfThreeOrFiveAndSeven = new AndSpecification($multipleOfThreeOrFive, new MultipleOfSevenSpecification());
         $useCase = new SumOfMultiplesUseCase($multipleOfThreeOrFiveAndSeven);
 
         $resultOne = $useCase->execute(21);

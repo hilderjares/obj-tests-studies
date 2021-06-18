@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1623896744">
-  <project timestamp="1623896744">
+<coverage generated="1624038216">
+  <project timestamp="1624038216">
     <file name="/var/www/app/src/ObjQuestOne/AndSpecification.php">
       <class name="App\ObjQuestOne\AndSpecification" namespace="global">
         <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
@@ -13,63 +13,59 @@
       <line num="19" type="stmt" count="4"/>
       <line num="20" type="stmt" count="2"/>
       <line num="24" type="stmt" count="4"/>
-      <line num="26" type="stmt" count="1"/>
-      <metrics loc="25" ncloc="25" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      <metrics loc="26" ncloc="26" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
     </file>
-    <file name="/var/www/app/src/ObjQuestOne/MultipleOfFiveEspecification.php">
-      <class name="App\ObjQuestOne\MultipleOfFiveEspecification" namespace="global">
+    <file name="/var/www/app/src/ObjQuestOne/MultipleOfFiveSpecification.php">
+      <class name="App\ObjQuestOne\MultipleOfFiveSpecification" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </class>
       <line num="11" type="method" name="isSatisfiedBy" visibility="public" complexity="1" crap="1" count="6"/>
       <line num="13" type="stmt" count="6"/>
       <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
     </file>
-    <file name="/var/www/app/src/ObjQuestOne/MultipleOfSevenEspecification.php">
-      <class name="App\ObjQuestOne\MultipleOfSevenEspecification" namespace="global">
+    <file name="/var/www/app/src/ObjQuestOne/MultipleOfSevenSpecification.php">
+      <class name="App\ObjQuestOne\MultipleOfSevenSpecification" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </class>
       <line num="11" type="method" name="isSatisfiedBy" visibility="public" complexity="1" crap="1" count="2"/>
       <line num="13" type="stmt" count="2"/>
       <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
     </file>
-    <file name="/var/www/app/src/ObjQuestOne/MultipleOfThreeEspecification.php">
-      <class name="App\ObjQuestOne\MultipleOfThreeEspecification" namespace="global">
+    <file name="/var/www/app/src/ObjQuestOne/MultipleOfThreeSpecification.php">
+      <class name="App\ObjQuestOne\MultipleOfThreeSpecification" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </class>
-      <line num="11" type="method" name="isSatisfiedBy" visibility="public" complexity="1" crap="1" count="6"/>
-      <line num="13" type="stmt" count="6"/>
+      <line num="11" type="method" name="isSatisfiedBy" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="13" type="stmt" count="7"/>
       <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
     </file>
     <file name="/var/www/app/src/ObjQuestOne/NotSpecification.php">
       <class name="App\ObjQuestOne\NotSpecification" namespace="global">
-        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
       </class>
-      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="13" type="stmt" count="0"/>
-      <line num="14" type="stmt" count="0"/>
-      <line num="16" type="method" name="isSatisfiedBy" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="18" type="stmt" count="0"/>
-      <line num="20" type="stmt" count="0"/>
-      <metrics loc="19" ncloc="19" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="5" coveredelements="0"/>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="14" type="stmt" count="1"/>
+      <line num="16" type="method" name="isSatisfiedBy" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="18" type="stmt" count="1"/>
+      <metrics loc="20" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
     </file>
     <file name="/var/www/app/src/ObjQuestOne/OrSpecification.php">
       <class name="App\ObjQuestOne\OrSpecification" namespace="global">
         <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
       </class>
-      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
-      <line num="13" type="stmt" count="4"/>
-      <line num="14" type="stmt" count="4"/>
-      <line num="16" type="method" name="isSatisfiedBy" visibility="public" complexity="3" crap="3" count="4"/>
-      <line num="18" type="stmt" count="4"/>
-      <line num="19" type="stmt" count="4"/>
-      <line num="20" type="stmt" count="4"/>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="13" type="stmt" count="5"/>
+      <line num="14" type="stmt" count="5"/>
+      <line num="16" type="method" name="isSatisfiedBy" visibility="public" complexity="3" crap="3" count="5"/>
+      <line num="18" type="stmt" count="5"/>
+      <line num="19" type="stmt" count="5"/>
+      <line num="20" type="stmt" count="5"/>
       <line num="24" type="stmt" count="2"/>
-      <line num="26" type="stmt" count="1"/>
-      <metrics loc="25" ncloc="25" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      <metrics loc="26" ncloc="26" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
     </file>
     <file name="/var/www/app/src/ObjQuestOne/Specification.php">
-      <line num="10" type="stmt" count="1"/>
-      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      <metrics loc="10" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <file name="/var/www/app/src/ObjQuestOne/SumOfMultiplesUseCase.php">
       <class name="App\ObjQuestOne\SumOfMultiplesUseCase" namespace="global">
@@ -90,6 +86,6 @@
       <line num="3" type="stmt" count="0"/>
       <metrics loc="3" ncloc="3" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="1" coveredelements="0"/>
     </file>
-    <metrics files="9" loc="154" ncloc="154" classes="7" methods="11" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="22" elements="37" coveredelements="31"/>
+    <metrics files="9" loc="158" ncloc="158" classes="7" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="25" elements="37" coveredelements="36"/>
   </project>
 </coverage>

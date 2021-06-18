@@ -12,6 +12,11 @@ echo -e "\t\t *  ||----||      "
 echo -e "\t\t    ^^    ^^      "
 echo -e "\e[1;31m------------------------------------------------\e[0m"
 
+if [ "$1" = "" ];
+then 
+    echo -e "\e[1myou can use -h to show commands\e[0m"
+fi
+
 if [ "$1" = "-h" ];
 then 
     echo -e "\e[1myou can type this commands:\e[0m"
@@ -22,28 +27,38 @@ then
     echo -e "style:fix\e[0m"
 fi
 
+if [ "$1" = "docker:restart" ];
+then 
+    docker-compose restart
+fi
 
 if [ "$1" = "test" ];
 then 
-    ./vendor/bin/phpunit
+    docker-compose exec --env XDEBUG_MODE=coverage app ./vendor/bin/phpunit
 fi
 
 if [ "$1" = "test:dox" ];
 then 
-    ./vendor/bin/phpunit --testdox
+    docker-compose exec --env XDEBUG_MODE=coverage app ./vendor/bin/phpunit --testdox
 fi
 
-if [ "$1" = "test:save" ];
+if [ "$1" = "test:coverage" ];
 then 
-    ./vendor/bin/phpunit --testdox > results.text
+    docker-compose exec --env XDEBUG_MODE=coverage app ./vendor/bin/phpunit --coverage-html resources/
 fi
 
-if [ "$1" = "style:check" ];
+if [ "$1" = "test:coverage:svg" ];
 then 
-    ./vendor/bin/php-cs-fixer fix --diff --verbose --dry-run 
+    docker-compose exec --env XDEBUG_MODE=coverage app vendor/bin/phpunit --coverage-html resources/ --coverage-clover docs/coverage.xml
+    docker-compose exec --env XDEBUG_MODE=coverage app vendor/bin/php-coverage-badger docs/coverage.xml docs/coverage.svg
 fi
 
-if [ "$1" = "style:fix" ];
+if [ "$1" = "phpcs:check" ];
 then 
-    ./vendor/bin/php-cs-fixer fix 
+    docker-compose exec app ./vendor/bin/php-cs-fixer fix --diff --verbose --dry-run $2
+fi
+
+if [ "$1" = "phpcs:fix" ];
+then 
+    docker-compose exec app ./vendor/bin/php-cs-fixer fix 
 fi

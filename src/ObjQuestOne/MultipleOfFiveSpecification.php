@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\ObjQuestOne;
 
-class MultipleOfFiveEspecification implements Specification
-{   
+class MultipleOfFiveSpecification implements Specification
+{
     private const NUMBER_FIVE = 5;
 
     public function isSatisfiedBy(int $number): bool

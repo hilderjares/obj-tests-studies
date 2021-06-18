@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\ObjQuestOne;
 
-class MultipleOfThreeEspecification implements Specification
+class MultipleOfThreeSpecification implements Specification
 {
     private const NUMBER_THREE = 3;
 

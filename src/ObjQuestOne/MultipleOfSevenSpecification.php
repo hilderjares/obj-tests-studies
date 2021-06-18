@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\ObjQuestOne;
 
-class MultipleOfSevenEspecification implements Specification
+class MultipleOfSevenSpecification implements Specification
 {
     private const NUMBER_SEVEN = 7;
 
