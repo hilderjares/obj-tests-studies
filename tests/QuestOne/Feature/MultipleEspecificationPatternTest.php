@@ -12,7 +12,6 @@ class MultipleSpecificationPatternTest extends TestCase
 {
     protected function setUp(): void
     {
-        
     }
        
     /**
