@@ -15,7 +15,7 @@ class CartShippingCalculatorTest extends TestCase
     /**
      * @testdox Teste se adicionando o mesmo produto, uma exceção é lançada
      */
-    public function test_shipping_calculator()
+    public function test_if_throw_exception_when_add_the_same_product()
     {
         $this->expectException(DomainException::class);
         
