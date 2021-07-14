@@ -25,8 +25,14 @@ then
     echo -e "test:coverage"
     echo -e "test:coverage:svg"
     echo -e "docker:restart"
+    echo -e "docker:up --flags"
     echo -e "phpcs:check /path"
     echo -e "phpcs:fix /path\e[0m"
+fi
+
+if [ "$1" = "docker:up" ];
+then
+    docker-compose up $2
 fi
 
 if [ "$1" = "docker:restart" ];
@@ -36,7 +42,7 @@ fi
 
 if [ "$1" = "test" ];
 then 
-    docker-compose exec --env XDEBUG_MODE=coverage app ./vendor/bin/phpunit
+    docker-compose exec --env XDEBUG_MODE=coverage app ./vendor/bin/phpunit $2
 fi
 
 if [ "$1" = "test:dox" ];

@@ -13,6 +13,10 @@
         "friendsofphp/php-cs-fixer": "^2.16",
         "phpunit/phpunit": "^9.5",
         "nunomaduro/phpinsights": "^1.14",
-        "jaschilz/php-coverage-badger": "^2.0"
+        "jaschilz/php-coverage-badger": "^2.0",
+        "joeyrush/better-dd": "^1.2"
+    },
+    "require": {
+        "illuminate/collections": "^8.50"
     }
 }

@@ -20,7 +20,7 @@ services:
       - PHP_DEBUGGER="xdebug"
       - XDEBUG_MODE=debug
       - XDEBUG_DISCOVER_CLIENT_HOST=Off
-      - XDEBUG_CLIENT_HOST=172.17.0.1
+      - XDEBUG_CLIENT_HOST=host.docker.internal
       - XDEBUG_CLIENT_PORT=9090
       - XDEBUG_PROFILER_ENABLE=Off
       - COMPOSER_VERSION=2
